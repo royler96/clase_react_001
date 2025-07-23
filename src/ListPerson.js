@@ -7,7 +7,7 @@ function ListPerson() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://ec2-34-207-193-28.compute-1.amazonaws.com:5000/api/person")
+    axios.get("https://ac2e8e2f2498.ngrok-free.app/api/person")
     .then(response => {
       console.log("datos del api", response.data);
       setListPerson(response.data)
